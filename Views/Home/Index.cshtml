@@ -1,0 +1,18 @@
+﻿@{
+  ViewData["Title"] = "Home Page";
+}
+
+<h1>[Correct] Case01: someNumber and requestId </h1>
+<a href="/GetRequest?number=12345&RequestId=46259c41-8b76-4b68-9f87-09bda015ee59">
+  /GetRequest?number=12345&RequestId=46259c41-8b76-4b68-9f87-09bda015ee59
+</a>
+
+<h1>[Incorrect] Case02: only someNumber</h1>
+<a href="/GetRequest?number=12345">
+  /GetRequest?number=12345
+</a>
+
+<h1>[Correct] Case03: only requestId</h1>
+<a href="/GetRequest?requestId=46259c41-8b76-4b68-9f87-09bda015ee59">
+  /GetRequest?requestId=46259c41-8b76-4b68-9f87-09bda015ee59
+</a>
