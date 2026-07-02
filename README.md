@@ -8,4 +8,4 @@ http://localhost:5249/GetRequest?number=12345
 but the result is that requestId is filled with a random Guid value.
 
 Video:
-https://github.com/zwcloud/aspnetcore-issue-repo-model-property-filled-with-random-value/raw/refs/heads/master/video.mp4
+https://github.com/user-attachments/assets/4ccac96b-821d-4396-9b27-4335abd8a375
