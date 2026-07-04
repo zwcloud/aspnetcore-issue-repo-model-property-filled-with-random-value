@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers;
 
+[ApiController]
+[Route("/")]
 public class HomeController : Controller
 {
     [HttpGet("GetRequest")]
@@ -13,6 +15,7 @@ public class HomeController : Controller
         return View("Request", requestId);
     }
 
+    [HttpGet("/")]
     public IActionResult Index()
     {
         return View();

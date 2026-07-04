@@ -1,7 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    // enforces BindRequired for all types
+    options.ModelMetadataDetailsProviders.Clear();
+    options.ModelMetadataDetailsProviders.Add(new GlobalBindingRequiredProvider());
+});
 
 var app = builder.Build();
 
